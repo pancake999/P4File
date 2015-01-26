@@ -16,10 +16,10 @@ import static P3File.FileDAL.*;
 import P4Tag.TagBLL;
 import P4Tag.TagDAL;
 import static P4Tag.TagDAL.*;
-import static P5MX.Components.*;
+import static P5MX.Components.PasswordInvalid;
+import static P5MX.Components.UsernameInvalid;
+import static P5MX.Components.UsernameTaken;
 import java.util.ArrayList;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author ARISTOCRAT
