@@ -22,7 +22,7 @@
         <title>JSP Page</title>       
         <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body style=" background-color: grey">
     
         <h1> DROPCARGO </h1>
     
@@ -341,7 +341,7 @@
                                 },             // JSON data
                                 function(data){ data; 
                                 for ( var key in data ){     
-                            $('#cli_output').append('<div>' + data[key] + "</div>");
+                            $('#cli_output').append('<div style=\' background-color: white \'>' + data[key] + "</div>");
                         }
                                 }  // Callback      
                         );
