@@ -19,7 +19,7 @@ public class CLI {
      static enum             atom_type { comment, number, lex, flex, compute, key, opener, appender, closer, _import, _export  };
      enum mark_type { atom, group };
     
-    static class atom {
+    static public class atom {
         public atom_type type;
         public String data;
         
@@ -29,7 +29,7 @@ public class CLI {
         }
             
     }
-    static class group_marker {
+    static public class group_marker {
             
             public mark_type mkt;
             public int head_index, tail_index;
@@ -46,7 +46,7 @@ public class CLI {
         ArrayList<atom_type> type;
     }
    
-    static ArrayList<String>    symmetric_decompose     (String delimiter, String lex){
+    static public ArrayList<String>    symmetric_decompose     (String delimiter, String lex){
         
         //String lex = new String();
         ArrayList<String> segments = new ArrayList<>();
@@ -73,7 +73,7 @@ public class CLI {
         return segments;
     }
     
-    static ArrayList<String>    assymmetric_decompose   (String delimiter_alpha, String delimiter, String delimiter_omega, String lex){
+    static public ArrayList<String>    assymmetric_decompose   (String delimiter_alpha, String delimiter, String delimiter_omega, String lex){
         
         ArrayList<String> segments = new ArrayList<>();
 
@@ -119,7 +119,7 @@ public class CLI {
         return segments;
     }
     
-    static ArrayList<atom>          lexer   (ArrayList<atom> atoms, String source ){
+    static public ArrayList<atom>          lexer   (ArrayList<atom> atoms, String source ){
         
         ArrayList<atom> segments = new ArrayList<>();
         
@@ -149,7 +149,7 @@ public class CLI {
         return segments;
     }
     
-    static ArrayList<group_marker>  grouper (ArrayList<atom> atoms){
+    static public ArrayList<group_marker>  grouper (ArrayList<atom> atoms){
            
         ArrayList<group_marker> gm = new ArrayList<>();
         
@@ -190,7 +190,7 @@ public class CLI {
     }
    
     
-    static boolean          compare_exp     (ArrayList<atom> atoms, ArrayList<atom_type> types){
+    static public boolean          compare_exp     (ArrayList<atom> atoms, ArrayList<atom_type> types){
 
         if ( atoms.size() != types.size() ) return false;
         
@@ -206,7 +206,7 @@ public class CLI {
         return true;
     }
     
-        static String             execute_exp     (String term){
+        static public String             execute_exp     (String term){
         
         /*
             TYPE NUM8 16 32 64

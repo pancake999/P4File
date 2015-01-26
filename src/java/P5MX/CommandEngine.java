@@ -9,6 +9,7 @@ package P5MX;
  */
 
 
+import static Functionality.CLI.execute_exp;
 import Functionality.search;
 import static P1User.UserDAL.SelectAllUsers;
 import static P1User.UserDAL.SelectUsersByAccess;
@@ -138,23 +139,29 @@ public class CommandEngine extends HttpServlet {
                 AccessDAL.RevokeAccess(new AccessBLL(Integer.valueOf(Index), Integer.valueOf(Index_B)));
                 System.out.println("[ Revoke [user:" + Index + "] to [file:" + Index_B + " ]");
                 break;
-            case "cli": 
+            case "search": 
                 Index = request.getParameter("UserId");
                 Index_B = request.getParameter("term");
-                ArrayList<FileBLL> ux = FileDAL.SelectFilesByUser(Integer.valueOf(Index));
-                ArrayList<String> lex = new ArrayList<>();
-                ArrayList<String> result = new ArrayList<>();
-                for ( FileBLL fx : ux ){
-                    lex.add(fx.getFilename() + "." + fx.getFiletype());
-                   // System.out.println(fx.getFilename() + "." + fx.getFiletype());
+                if ( Index_B.length() > 0 && Index_B.charAt(0) != ':'){
+                    ArrayList<FileBLL> ux = FileDAL.SelectFilesByUser(Integer.valueOf(Index));
+                    ArrayList<String> lex = new ArrayList<>();
+                    ArrayList<String> result = new ArrayList<>();
+                    for ( FileBLL fx : ux ){
+                        lex.add(fx.getFilename() + "." + fx.getFiletype());
+                       // System.out.println(fx.getFilename() + "." + fx.getFiletype());
+                    }
+
+                    result = search.fuzzy(Index_B, lex);
+
+                    for( String sx : result ){
+                        output.put(sx);
+                        System.out.println(sx);
+                    }
+                }
+                else {
+                    output.put(execute_exp(Index_B));
                 }
                 
-                result = search.fuzzy(Index_B, lex);
-                
-                for( String sx : result ){
-                    output.put(sx);
-                    System.out.println(sx);
-                }
                 System.out.println("[ compute >> " + command + " ]");
                 break;
         }

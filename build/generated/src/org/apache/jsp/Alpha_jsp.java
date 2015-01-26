@@ -385,7 +385,7 @@ public final class Alpha_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    if($('#cli_input').val()){    \n");
       out.write("                        $.get(  'CommandEngine',                  // Servlet\n");
       out.write("                                { \n");
-      out.write("                                    command : 'cli',\n");
+      out.write("                                    command : 'search',\n");
       out.write("                                    UserId : $('#users').val(),\n");
       out.write("                                    term : $('#cli_input').val()\n");
       out.write("                                },             // JSON data\n");

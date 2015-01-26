@@ -282,9 +282,9 @@
     
     <div id="cli_output"></div>
     <div> 
-        CC >>: <select id="user_tags"></select>
-        USER FILES >>: <select id="user_files" onchange="trigger_files()"></select> 
-        TAGS >>: <select id="file_tags"></select>
+        <!--CC >>: <select id="user_tags"></select>-->
+        USER FILES >>: <select id="user_files" size="10" onchange="trigger_files()"></select> 
+        TAGS >>: <select id="file_tags" size="10"></select>
         
         <br><button id="delete_file" onclick="delete_file()">Delete File</button>
 
@@ -316,7 +316,7 @@
     </div><br>
     <div>
         NEW TAG
-        <input type="text" value="qsd" name="tbtag">
+        <input type="text" name="tbtag">
         <button onclick="add_tag()">ADD TAG</button>
     </div>
     <div> 
@@ -330,7 +330,7 @@
     
  
     <script>
-        $('#cli_input').keydown(function(){
+        $('#cli_input').keyup(function(){
 
                     $('#cli_output').empty();
 
@@ -341,12 +341,14 @@
                                     UserId : $('#users').val(),
                                     term : $('#cli_input').val()
                                 },             // JSON data
-                                function(data){ array = data; }  // Callback      
+                                function(data){ data; 
+                                for ( var key in data ){     
+                            $('#cli_output').append('<div>' + data[key] + "</div>");
+                        }
+                                }  // Callback      
                         );
 
-                        for ( var key in array ){     
-                            $('#cli_output').append('<div>' + array[key] + "</div>");
-                        }
+                        
                     }
                     else {
                         $('#cli_output').append('<div>' + "Clear" + "</div>");

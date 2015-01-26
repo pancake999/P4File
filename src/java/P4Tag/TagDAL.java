@@ -70,7 +70,7 @@ public class TagDAL {
         try {
 
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/storagedb", "root", "usbw");
-                PreparedStatement stmt = conn.prepareStatement("SELECT * FROM TagRepo WHERE FileId=? AND TagRepo.Tag!='Local'");
+                PreparedStatement stmt = conn.prepareStatement("SELECT DISTINCT * FROM TagRepo WHERE FileId=? AND TagRepo.Tag!='Local'");
 
                 stmt.setInt(1, FileId);
                 
@@ -107,7 +107,7 @@ public class TagDAL {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/storagedb", "root", "usbw");
                 PreparedStatement stmt = conn.prepareStatement(
                         "SELECT DISTINCT tagrepo.* FROM accessrepo"
-                                + " JOIN tagrepo"
+                                + " INNER JOIN tagrepo"
                                 + " ON accessrepo.fileid=tagrepo.fileid "
                                 + " WHERE userid=?"
                 );
