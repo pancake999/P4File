@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P3File/FileBLL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/BLL/Account.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Controller/UpdateFile.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/web/Alpha.jsp</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/Commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/TestUpload.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P1User/UserBLL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/search.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/FileController.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/coreDB.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P3File/FileDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/ParseDSL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/c_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/FN/ByteArray.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/DAL/AccessDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/conf/persistence.xml</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/module_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/BLL/Directory.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P2Access/AccessBLL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Controller/PreviewFile.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P1User/UserDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/build/generated/src/org/apache/jsp/Alpha_jsp.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P4Tag/TagBLL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Controller/DeleteFile.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/Test.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/setup/glassfish-resources.xml</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/Components.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/Garbage.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/ce_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/command_engine.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P2Access/AccessDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/FN/Parser.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Functionality/coreFS.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/web/WEB-INF/newjsf.xhtml</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P4Tag/TagDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/container_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/DAL/DirectoryDAL.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/circle_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/BLL/Access.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/P5MX/CommandEngine.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/user_commands.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/build/generated/src/org/apache/jsp/newjsp_jsp.java</file>
+            <file>file:/C:/Users/ARISTOCRAT/Desktop/GITHUB.SYNC/HibernateApp/Code/PROTOTYPE/src/java/Commands/command_server.java</file>
+        </group>
+    </open-files>
+</project-private>

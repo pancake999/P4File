@@ -1,0 +1,121 @@
+/*     static void              compute_replace    (String substitute, String sequence){
+        ArrayList<String> match_set = new ArrayList<>();
+
+        for(int dx = 0; dx < sequence.length()-substitute.length(); dx++){
+            if ( sequence
+                    .substring          (dx, substitute.length())
+                    .equalsIgnoreCase   (substitute) ){
+                
+            }
+        }
+    }
+    
+    
+    
+    enum s_type { variant, composite};
+    
+    static class rule {
+            public String sequence;
+            public s_type type;
+            public String[] sub_sequence;
+    }
+    
+    static class clc {
+            
+        ArrayList<rule> rule = new ArrayList<>();
+        
+        public void new_rule(String sequence, s_type type, String[] sub_sequence){
+            
+            rule rx = new rule();
+                rx.sequence = sequence;
+                rx.type = type;
+                rx.sub_sequence = sub_sequence;
+                
+            rule.add(rx);
+        }
+        
+    }
+    
+    static class element {
+        //public String type; // relation
+        // key -type-> data
+        public int      identity;
+        public String   alias;
+        public String   type; //data or compute
+        public String[] data;
+    }
+    
+    // selection - > operation
+    static class vector {
+        
+        public void new_element(String type, String data, element[] rx ){
+            element ex = new element();
+                ex.type = type;
+                ex.data = data;
+                ex.rx = rx;
+               [ commmon | unique ]  
+            clc.add(ex);
+        }
+        
+        public int root_elements = 0; // amount of root graph
+        public int selected_element;
+        public ArrayList<element> clc = new ArrayList<>();
+        
+    }*/
+   
+        /*node nx = new node();
+            nx.elements.
+        int VARIANT = 0;
+        int COMPOSITE = 1;
+        
+        vector clc = new vector();
+            clc.new_element("data", "342", null);
+            
+       
+        
+        clc cx = new clc();
+            cx.new_rule(":car", s_type.variant, new String[] {"qsdqsd", "qsdsd"} );
+            cx.new_rule(":num", s_type.variant, new String[] {":num", "x", "y"});
+           */ 
+        // [FIND <LIMIT>-POSITIONS OF <%>-PATTERN]
+        //      >> 
+        // [RETURN DO THIS TO IT]
+        // [abstraction] union [ elementA, elementB, elementC ]
+        
+        // class-pattern {id} ( external dx)[ elementA ]
+        
+        
+        
+       
+        /*index dx = new index();
+            dx.new_key("A");
+            dx.new_key("B");
+            dx.new_key("C");
+            dx.delete_key("DEF");*/
+            
+        /*ArrayList<String> names = new ArrayList<>();
+            names.add("saturday");
+            names.add("day");
+            names.add("hello");
+            names.add("richard");
+            names.add("abc");
+            names.add("evil");
+            names.add("something");
+            names.add("apes");
+            names.add("dumbo");
+            names.add("saturday");
+            names.add("sunday");
+            names.add("monday");
+            names.add("wednesday");
+            names.add("friday");
+            names.add("pes2010");
+            names.add("debat");
+            names.add("moeder");
+            names.add("sweden");
+            names.add("politie");*/
+            
+        //out(search_fuzzy("pes", names));
+        
+       //out(split("::", "demon::souls::hello::world!::sdf"));
+       //out(assymmetric_split("[", ".", "]","qsdsd"));
+       // System.out.println(edit_distance("sitting", "dddsitting"));
