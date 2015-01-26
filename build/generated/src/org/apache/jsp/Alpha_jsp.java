@@ -3,6 +3,15 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import P5MX.Commands;
+import P1User.UserBLL;
+import P1User.UserDAL;
+import P3File.FileDAL;
+import P3File.FileDAL.*;
+import P3File.FileBLL;
+import java.util.ArrayList;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
 public final class Alpha_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -149,6 +158,7 @@ public final class Alpha_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        { \n");
       out.write("                            command : 'select_user_files',\n");
       out.write("                            UserId : $('#users').val()\n");
+      out.write("                      \n");
       out.write("                        },                               // JSON data\n");
       out.write("                        function(data){ \n");
       out.write("                            \n");
@@ -375,7 +385,9 @@ public final class Alpha_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    if($('#cli_input').val()){    \n");
       out.write("                        $.get(  'CommandEngine',                  // Servlet\n");
       out.write("                                { \n");
-      out.write("                                    command : 'cli'\n");
+      out.write("                                    command : 'cli',\n");
+      out.write("                                    UserId : $('#users').val(),\n");
+      out.write("                                    term : $('#cli_input').val()\n");
       out.write("                                },             // JSON data\n");
       out.write("                                function(data){ array = data; }  // Callback      \n");
       out.write("                        );\n");

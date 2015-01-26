@@ -337,7 +337,7 @@
                     if($('#cli_input').val()){    
                         $.get(  'CommandEngine',                  // Servlet
                                 { 
-                                    command : 'cli'
+                                    command : 'search',
                                     UserId : $('#users').val(),
                                     term : $('#cli_input').val()
                                 },             // JSON data

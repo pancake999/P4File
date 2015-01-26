@@ -142,16 +142,18 @@ public class CommandEngine extends HttpServlet {
                 Index = request.getParameter("UserId");
                 Index_B = request.getParameter("term");
                 ArrayList<FileBLL> ux = FileDAL.SelectFilesByUser(Integer.valueOf(Index));
-                ArrayList<String> lex= new ArrayList<>();
+                ArrayList<String> lex = new ArrayList<>();
                 ArrayList<String> result = new ArrayList<>();
                 for ( FileBLL fx : ux ){
                     lex.add(fx.getFilename() + "." + fx.getFiletype());
+                   // System.out.println(fx.getFilename() + "." + fx.getFiletype());
                 }
                 
-                result = search.fuzzy(Index, lex);
+                result = search.fuzzy(Index_B, lex);
                 
                 for( String sx : result ){
                     output.put(sx);
+                    System.out.println(sx);
                 }
                 System.out.println("[ compute >> " + command + " ]");
                 break;
