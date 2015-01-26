@@ -24,9 +24,7 @@
     </head>
     <body>
     
-    
-    <h1> LOGIN PART </h1>
-    
+        <h1> DROPCARGO </h1>
     
         <script>
  
