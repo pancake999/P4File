@@ -1,5 +1,0 @@
-[ 
-    "fileA", 
-    "fileB",
-    [ "fileC", "fileD" ]
-]
