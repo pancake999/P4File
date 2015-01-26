@@ -9,7 +9,7 @@ package P7GUI;
  *
  * @author ARISTOCRAT
  */
-public class Skeleton extends javax.swing.JPanel {
+public class Skeleton extends javax.swing.JFrame {
 
     /**
      * Creates new form Skeleton

@@ -9,11 +9,14 @@ package P5MX;
  */
 
 
+import Functionality.search;
 import static P1User.UserDAL.SelectAllUsers;
 import static P1User.UserDAL.SelectUsersByAccess;
 import static P1User.UserDAL.SelectUsersByFile;
 import P2Access.AccessBLL;
 import P2Access.AccessDAL;
+import P3File.FileBLL;
+import P3File.FileDAL;
 import static P3File.FileDAL.SelectFile;
 import static P3File.FileDAL.SelectFilesByUser;
 import P4Tag.TagBLL;
@@ -24,6 +27,7 @@ import static P4Tag.TagDAL.SelectTagsByUser;
 import static P5MX.Commands.FileDelete;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -135,9 +139,20 @@ public class CommandEngine extends HttpServlet {
                 System.out.println("[ Revoke [user:" + Index + "] to [file:" + Index_B + " ]");
                 break;
             case "cli": 
-                    output.put("works");
-                    output.put("dilbert");
-                    output.put("momma");
+                Index = request.getParameter("UserId");
+                Index_B = request.getParameter("term");
+                ArrayList<FileBLL> ux = FileDAL.SelectFilesByUser(Integer.valueOf(Index));
+                ArrayList<String> lex= new ArrayList<>();
+                ArrayList<String> result = new ArrayList<>();
+                for ( FileBLL fx : ux ){
+                    lex.add(fx.getFilename() + "." + fx.getFiletype());
+                }
+                
+                result = search.fuzzy(Index, lex);
+                
+                for( String sx : result ){
+                    output.put(sx);
+                }
                 System.out.println("[ compute >> " + command + " ]");
                 break;
         }

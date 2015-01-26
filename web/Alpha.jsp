@@ -110,6 +110,7 @@
                         { 
                             command : 'select_user_files',
                             UserId : $('#users').val()
+                      
                         },                               // JSON data
                         function(data){ 
                             
@@ -337,6 +338,8 @@
                         $.get(  'CommandEngine',                  // Servlet
                                 { 
                                     command : 'cli'
+                                    UserId : $('#users').val(),
+                                    term : $('#cli_input').val()
                                 },             // JSON data
                                 function(data){ array = data; }  // Callback      
                         );
